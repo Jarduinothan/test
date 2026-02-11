@@ -3,12 +3,29 @@
 <head>
 <style>
 </style>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
 </head>
 <body>
-
-<img src="Ship.png" alt="HTML5 Icon" width="128" height="128">
-
-<img src="Ship.png" alt="HTML5 Icon" style="width:128px;height:128px;">
-
+   <img src="Ship.png" alt="HTML5 Icon" width="128" height="128">
+    
+    <img src="Ship.png" alt="HTML5 Icon" style="width:128px;height:128px;">
+  <script>
+    let img;
+    
+    // Load the image.
+    function preload() {
+      img = loadImage('ShipShape.png');
+    }
+    
+    function setup() {
+      createCanvas(100, 100);
+    
+      // Display the image.
+      image(img, 0, 0);
+    
+      describe('An image of the shape of the ship');
+    }
+   
+  </script>
 </body>
 </html>
